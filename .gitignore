@@ -1,0 +1,10 @@
+*.pyc
+.gitignore.swp
+*egg-info*
+docs/screenshots/
+build/
+dist/
+bin/
+node_modules/*
+.idea/*
+.pypirc
