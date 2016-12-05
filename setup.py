@@ -18,7 +18,7 @@ setup(
     author_email="marc@pbi.io, jonas@pbi.io",
     name='django-slick-admin-login',
     version=django_slick_admin_login.__version__,
-    description='Slick admin Login branding for Django and django CMS.',
+    description='Custom-Branded Login Theme for django-slick-admin (for Django and Django CMS)',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     url='https://github.com/palmbeach-interactive/django-slick-admin-login/',
     license='MIT License',

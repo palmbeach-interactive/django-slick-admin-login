@@ -2,7 +2,8 @@
   font-family: "MaterialIcons-Regular";
   src: url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.svg") format("svg"), url("../fonts/MaterialIcons-Regular.eot") format("embedded-opentype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 .material-icons {
   font-family: 'Material Icons';
@@ -21,7 +22,10 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-smoothing: grayscale;
-  font-feature-settings: 'liga'; }
+  -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
 
 body.slick-admin.login #header {
   overflow: visible;
@@ -29,80 +33,144 @@ body.slick-admin.login #header {
   top: 0;
   left: 0;
   right: 0;
-  color: #0cc2aa; }
+  color: #0cc2aa;
+}
 
 body.slick-admin.login #container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   width: 100vw;
   background-color: #f0f0f0;
   background: linear-gradient(to top right, #e6f49f 10%, #8ceebe 65%, #69ebca 125%) !important;
   border: 0px;
   border-radius: 0px;
-  margin: 0; }
-  body.slick-admin.login #container #content {
-    background-color: transparent !important;
-    max-width: 100% !important;
-    box-shadow: none !important; }
-    body.slick-admin.login #container #content .pbi-logo img {
-      max-width: 300px;
-      margin-bottom: 20px; }
-    body.slick-admin.login #container #content #content-main {
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-      padding: 0 90px 45px 90px;
-      max-width: 24em;
-      background-color: #fff; }
-      body.slick-admin.login #container #content #content-main h1 {
-        text-align: center; }
-  body.slick-admin.login #container #footer.footer {
-    clear: none;
-    padding: 20px; }
-    body.slick-admin.login #container #footer.footer .content {
-      color: #fff; }
+  margin: 0;
+}
+
+body.slick-admin.login #container #content {
+  background-color: transparent !important;
+  max-width: 100% !important;
+  box-shadow: none !important;
+}
+
+body.slick-admin.login #container #content .pbi-logo img {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+body.slick-admin.login #container #content #content-main {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  padding: 0 90px 45px 90px;
+  max-width: 24em;
+  background-color: #fff;
+}
+
+body.slick-admin.login #container #content #content-main h1 {
+  text-align: center;
+}
+
+body.slick-admin.login #container #footer.footer {
+  clear: none;
+  padding: 20px;
+}
+
+body.slick-admin.login #container #footer.footer .content {
+  color: #fff;
+}
 
 body.login {
-  background-color: #f0f0f0; }
-  body.login #site-name {
-    display: none; }
-  body.login form input:-webkit-autofill, body.login form input:focus:-webkit-autofill {
-    box-shadow: 0 0 0px 1000px #FFF inset !important;
-    background-color: transparent !important; }
-  body.login form input[type="password"], body.login form input[type="text"] {
-    background: 0 0;
-    position: relative;
-    z-index: 5;
-    border: 0;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 34px;
-    padding: 2px !important;
-    color: inherit;
-    background-color: transparent;
-    padding-left: 0 !important;
-    transition: all .2s;
-    margin-bottom: 30px; }
-    body.login form input[type="password"]:focus, body.login form input[type="text"]:focus {
-      border-bottom: 2px solid #0cc2aa;
-      padding-bottom: 1px !important; }
-    body.login form input[type="password"] label, body.login form input[type="text"] label {
-      position: absolute; }
-  body.login form .submit-row {
-    padding: 0; }
-    body.login form .submit-row input[type=submit] {
-      display: block;
-      width: 100%;
-      padding: .4375rem 1rem !important;
-      height: 38px !important;
-      font-size: 16px !important;
-      text-transform: inherit !important;
-      font-weight: 400; }
+  background-color: #f0f0f0;
+}
+
+body.login #site-name {
+  display: none;
+}
+
+body.login form input:-webkit-autofill, body.login form input:focus:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #FFF inset !important;
+  background-color: transparent !important;
+}
+
+body.login form input[type="password"], body.login form input[type="text"] {
+  background: 0 0;
+  position: relative;
+  z-index: 5;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 34px;
+  padding: 2px !important;
+  color: inherit;
+  background-color: transparent;
+  padding-left: 0 !important;
+  transition: all .2s;
+  margin-bottom: 30px;
+}
+
+body.login form input[type="password"]:focus, body.login form input[type="text"]:focus {
+  border-bottom: 2px solid #0cc2aa;
+  padding-bottom: 1px !important;
+}
+
+body.login form input[type="password"] label, body.login form input[type="text"] label {
+  position: absolute;
+}
+
+body.login form .submit-row {
+  padding: 0;
+}
+
+body.login form .submit-row input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: .4375rem 1rem !important;
+  height: 38px !important;
+  font-size: 16px !important;
+  text-transform: inherit !important;
+  font-weight: 400;
+}
 
 body.login #content form .submit-row input[type=submit] {
   float: right;
   width: auto;
-  padding: auto; }
+  padding: 6px 20px !important;
+}
+
+.brand-links {
+  text-align: center;
+}
+
+.brand-links ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.brand-links ul li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  margin: 20px 10px 0 10px;
+}
+
+.brand-links ul li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.brand-links ul li a:hover {
+  color: #0cc2aa;
+}

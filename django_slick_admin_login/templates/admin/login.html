@@ -1,4 +1,4 @@
-{% extends "admin/base_site.html" %}
+{% extends "admin/_base_site.html" %}
 {% load i18n static %}
 
 {% block extrastyle %}{{ block.super }}
@@ -71,5 +71,15 @@
             </div>
         </form>
 
+    </div>
+
+    <div class="brand-links">
+        <ul class="menu" >
+            <li><a class="" href="/">Aktuell</a></li>
+            <li><a class="" href="/projekte/">Projekte</a></li>
+            <li><a class="" href="/agentur/">Agentur</a></li>
+            <li><a class="" href="/blog/">Blog</a></li>
+            <li><a class="" href="/kontakt/">Kontakt</a></li>
+        </ul>
     </div>
 {% endblock %}
